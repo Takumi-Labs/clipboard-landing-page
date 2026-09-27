@@ -1,0 +1,299 @@
+/* CUSTOM PROPERTIES 
+------------------------*/
+
+/* GLOBAL STYLES
+------------------------ */
+:root {
+  --color-green-500: hsl(171, 66%, 44%);
+  --color-blue-100: hsl(233, 100%, 69%);
+  --color-gray-700: hsl(210, 10%, 33%);
+  --color-gray-500: hsl(201, 11%, 66%);
+  --color-light-gray: #f5f6f8;
+  --color-white: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: var(--color-gray-500);
+  font-size: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+
+.page-logo {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
+.logo-container {
+  width: 100%;
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro p {
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 400;
+}
+
+.btn-1,
+.btn-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+
+.btn-1 {
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  border: solid var(--color-green-500);
+  box-shadow: 0 3px 0 hsl(171, 66%, 30%);
+}
+
+.btn-2 {
+  background-color: var(--color-blue-100);
+  color: var(--color-white);
+  border: solid var(--color-blue-100);
+  box-shadow: 0 3px 0 hsl(233, 100%, 55%);
+}
+
+.track {
+  margin-top: 130px;
+  margin-bottom: 60px;
+}
+
+.devices {
+  width: 100%;
+}
+
+.properties {
+  margin-bottom: 150px;
+}
+
+.properties > h2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.properties > p {
+  margin-top: 10px;
+}
+
+h1,
+h2 {
+  color: var(--color-gray-700);
+  font-weight: 600;
+}
+
+.access h2 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.access p {
+  margin-bottom: 50px;
+}
+
+.features {
+  margin-top: 60px;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+}
+
+.companies img {
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.clipboard {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+footer {
+  color: var(--color-gray-700);
+  margin-top: 150px;
+  background-color: var(--color-light-gray);
+  padding: 35px 0;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+
+  .page-logo {
+    width: 70px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .intro {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+
+  .btn {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .btn-1,
+  .btn-2 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .track {
+    max-width: 600px;
+    margin: 130px auto 80px;
+  }
+
+  .desktop-split {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    text-align: left;
+  }
+
+  .desktop-split > div {
+    flex: 1;
+  }
+
+  .desktop-container {
+    margin-left: -200px;
+  }
+
+  .desktop {
+    width: 100%;
+  }
+
+  .properties {
+    margin-top: -70px;
+    margin-bottom: 0;
+  }
+
+  .properties > h2:first-child {
+    margin-top: 0;
+  }
+
+  .access {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .access h2 {
+    width: 100%;
+  }
+
+  .access .devices {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .features {
+    margin-top: 0;
+    text-align: center;
+    flex: 1;
+  }
+
+  .companies {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .companies img {
+    margin-top: 0;
+  }
+
+  .clipboard {
+    max-width: 500px;
+    margin: 150px auto 40px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 45px 100px;
+  }
+
+  .info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, auto);
+    gap: 15px 60px;
+    margin: 0;
+  }
+
+  .info p {
+    margin: 0;
+  }
+
+  .socials {
+    margin: 0;
+  }
+}
